@@ -8,7 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		D220ADF921C5DE37000D1F32 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220ADF821C5DE37000D1F32 /* main.swift */; };
+		D220AE1B21C5E58A000D1F32 /* Parser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D220AE1221C5E58A000D1F32 /* Parser.framework */; };
+		D220AE2021C5E58A000D1F32 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220AE1F21C5E58A000D1F32 /* ParserTests.swift */; };
+		D220AE2221C5E58A000D1F32 /* Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = D220AE1421C5E58A000D1F32 /* Parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D220AE2A21C5E597000D1F32 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220AE2921C5E597000D1F32 /* Parser.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D220AE1C21C5E58A000D1F32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D220ADED21C5DE37000D1F32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D220AE1121C5E58A000D1F32;
+			remoteInfo = Parser;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D220ADF321C5DE37000D1F32 /* CopyFiles */ = {
@@ -25,6 +39,13 @@
 /* Begin PBXFileReference section */
 		D220ADF521C5DE37000D1F32 /* Demangler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Demangler; sourceTree = BUILT_PRODUCTS_DIR; };
 		D220ADF821C5DE37000D1F32 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D220AE1221C5E58A000D1F32 /* Parser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Parser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D220AE1421C5E58A000D1F32 /* Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		D220AE1521C5E58A000D1F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D220AE1A21C5E58A000D1F32 /* ParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D220AE1F21C5E58A000D1F32 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
+		D220AE2121C5E58A000D1F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D220AE2921C5E597000D1F32 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +56,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D220AE0F21C5E58A000D1F32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D220AE1721C5E58A000D1F32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D220AE1B21C5E58A000D1F32 /* Parser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				D220ADF721C5DE37000D1F32 /* Demangler */,
+				D220AE1321C5E58A000D1F32 /* Parser */,
+				D220AE1E21C5E58A000D1F32 /* ParserTests */,
 				D220ADF621C5DE37000D1F32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				D220ADF521C5DE37000D1F32 /* Demangler */,
+				D220AE1221C5E58A000D1F32 /* Parser.framework */,
+				D220AE1A21C5E58A000D1F32 /* ParserTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +102,37 @@
 			path = Demangler;
 			sourceTree = "<group>";
 		};
+		D220AE1321C5E58A000D1F32 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				D220AE1421C5E58A000D1F32 /* Parser.h */,
+				D220AE2921C5E597000D1F32 /* Parser.swift */,
+				D220AE1521C5E58A000D1F32 /* Info.plist */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		D220AE1E21C5E58A000D1F32 /* ParserTests */ = {
+			isa = PBXGroup;
+			children = (
+				D220AE1F21C5E58A000D1F32 /* ParserTests.swift */,
+				D220AE2121C5E58A000D1F32 /* Info.plist */,
+			);
+			path = ParserTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D220AE0D21C5E58A000D1F32 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D220AE2221C5E58A000D1F32 /* Parser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D220ADF421C5DE37000D1F32 /* Demangler */ = {
@@ -82,6 +152,42 @@
 			productReference = D220ADF521C5DE37000D1F32 /* Demangler */;
 			productType = "com.apple.product-type.tool";
 		};
+		D220AE1121C5E58A000D1F32 /* Parser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D220AE2321C5E58A000D1F32 /* Build configuration list for PBXNativeTarget "Parser" */;
+			buildPhases = (
+				D220AE0D21C5E58A000D1F32 /* Headers */,
+				D220AE0E21C5E58A000D1F32 /* Sources */,
+				D220AE0F21C5E58A000D1F32 /* Frameworks */,
+				D220AE1021C5E58A000D1F32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parser;
+			productName = Parser;
+			productReference = D220AE1221C5E58A000D1F32 /* Parser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D220AE1921C5E58A000D1F32 /* ParserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D220AE2621C5E58A000D1F32 /* Build configuration list for PBXNativeTarget "ParserTests" */;
+			buildPhases = (
+				D220AE1621C5E58A000D1F32 /* Sources */,
+				D220AE1721C5E58A000D1F32 /* Frameworks */,
+				D220AE1821C5E58A000D1F32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D220AE1D21C5E58A000D1F32 /* PBXTargetDependency */,
+			);
+			name = ParserTests;
+			productName = ParserTests;
+			productReference = D220AE1A21C5E58A000D1F32 /* ParserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +199,13 @@
 				ORGANIZATIONNAME = tarunon;
 				TargetAttributes = {
 					D220ADF421C5DE37000D1F32 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					D220AE1121C5E58A000D1F32 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					D220AE1921C5E58A000D1F32 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -110,9 +223,28 @@
 			projectRoot = "";
 			targets = (
 				D220ADF421C5DE37000D1F32 /* Demangler */,
+				D220AE1121C5E58A000D1F32 /* Parser */,
+				D220AE1921C5E58A000D1F32 /* ParserTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D220AE1021C5E58A000D1F32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D220AE1821C5E58A000D1F32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D220ADF121C5DE37000D1F32 /* Sources */ = {
@@ -123,7 +255,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D220AE0E21C5E58A000D1F32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D220AE2A21C5E597000D1F32 /* Parser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D220AE1621C5E58A000D1F32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D220AE2021C5E58A000D1F32 /* ParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D220AE1D21C5E58A000D1F32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D220AE1121C5E58A000D1F32 /* Parser */;
+			targetProxy = D220AE1C21C5E58A000D1F32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D220ADFA21C5DE37000D1F32 /* Debug */ = {
@@ -259,6 +415,101 @@
 			};
 			name = Release;
 		};
+		D220AE2421C5E58A000D1F32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Parser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.Parser;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D220AE2521C5E58A000D1F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Parser/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.Parser;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D220AE2721C5E58A000D1F32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.ParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		D220AE2821C5E58A000D1F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ParserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tarunon.ParserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +527,24 @@
 			buildConfigurations = (
 				D220ADFD21C5DE37000D1F32 /* Debug */,
 				D220ADFE21C5DE37000D1F32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D220AE2321C5E58A000D1F32 /* Build configuration list for PBXNativeTarget "Parser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D220AE2421C5E58A000D1F32 /* Debug */,
+				D220AE2521C5E58A000D1F32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D220AE2621C5E58A000D1F32 /* Build configuration list for PBXNativeTarget "ParserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D220AE2721C5E58A000D1F32 /* Debug */,
+				D220AE2821C5E58A000D1F32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
